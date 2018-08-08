@@ -13,9 +13,9 @@ const routes: Routes = [
     path: 'login',
     loadChildren: './login/login.module#LoginModule'
   },
-  {
-    path: '**', component: Error403Component
-  },
+  // {
+  //   path: '**', component: Error403Component
+  // },
   {
     path: '',
     redirectTo: '',
