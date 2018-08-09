@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuardService } from './guards/auth-guard.service';
 import { Error403Component } from './pages/error403/error403.component';
+import { AuthGuardChildService } from './guards/auth-guard-child.service';
 
 @NgModule({
   declarations: [
@@ -13,9 +14,9 @@ import { Error403Component } from './pages/error403/error403.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule    
+    AppRoutingModule
   ],
-  providers: [AuthGuardService],
+  providers: [AuthGuardService, AuthGuardChildService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
